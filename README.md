@@ -28,7 +28,20 @@ __note__ Power consumption shown in image above was taken whilst BME280 sensor h
 and draws 9-12uAh under deep sleep.
 
 ## Schematics
-TODO
+![High Level Connectivity](high-level-connectivity.png?raw=true "High level connectivity")
+
+|         From              |           To              |
+|:---                       |           :---            |
+| Charge Controller PWR IN+ | Solar Panel+              |
+| Charge Controller PWR IN- | Solar Panel-              |
+| Charge Controller BAT+    | LiPo+                     |
+| Charge Controller BAT-    | LiPo-                     |
+| Charge Controller VOUT+   | Firebeetle Li-ION+        |
+| Charge Controller VOUT-   | Firebeetle Li-ION-        |
+| BME280 VCC                | Firebeetle 3v3            |
+| BME280 GND                | Firebeetle GND            |
+| BME280 SCL                | Firebeetle SCL/IO22       |
+| BME280 SDA                | Firebeetle SDA/IO21       |
 
 # Planned changes
 Monitor battery level
