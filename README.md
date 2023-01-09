@@ -23,9 +23,15 @@ With a 6V 1W solar panel, 9 seconds per day of sun is required to keep the batte
 > 1000 X 1 (Wh) X 6 (v) = 166.mAh ; Solar output
 > 0.4 (mAh/day usage) / 166.666 = 8.64 seconds
 
-![Power Consumpion](usage.png?raw=true "Power Consumption")
-__note__ Power consumption shown in image above was taken whilst BME280 sensor had attached LED. It has since been removed
-and draws 9-12uAh under deep sleep.
+![Power Consumpion during measurement/transmission](usage.png?raw=true "Power Consumption during measurement/transmission")
+
+_Power consumption during measurements / transmission. 1 mA is represented as 1mV_
+
+![Power Consumpion during deep-sleep](deep-sleep.png?raw=true "Power Consumption during deep sleep")
+
+_Power consumption during deep sleep. 1 uA is represented as 1mV_
+
+Measurements taken using a [CurrentRanger](https://lowpowerlab.com/shop/product/152) and [JYETech Wave2](https://jyetech.com/wave2-2-channel-portable-oscilloscope/)
 
 ## Schematics
 ![High Level Connectivity](high-level-connectivity.png?raw=true "High level connectivity")
