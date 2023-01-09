@@ -42,7 +42,6 @@ and draws 9-12uAh under deep sleep.
 | BME280 GND                | Firebeetle GND            |
 | BME280 SCL                | Firebeetle SCL/IO22       |
 | BME280 SDA                | Firebeetle SDA/IO21       |
-| BME280 VCC                | BME280 SDO                |
 
 # Planned changes
 Monitor battery level
