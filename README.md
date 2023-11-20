@@ -16,12 +16,14 @@ To gather environment (temperature/humidity) data and send over WiFi offgrid sol
 * Parts should be ordered without status LED's (or otherwise removed) 
 
 # Power usage analytics
-The project averages 1mAs per reading, recording once every minute.
-With a 1100mAh battery, this allows (In theory) a maximum of 3960000 recordings without charging.
+The project averages 92mAs per reading.
+With a 1100mAh battery, this allows theoretical a maximum of 718 readings without charge (92mAs * 60 readings per hour = 5520mAs, or 1.53mAh average consumption).
+In practice this will be lower due to efficiencies and minimal voltage level required to power the circuit.
 
-With a 6V 1W solar panel, 9 seconds per day of sun is required to keep the battery full.
-> 1000 X 1 (Wh) X 6 (v) = 166.mAh ; Solar output
-> 0.4 (mAh/day usage) / 166.666 = 8.64 seconds
+With a 6V 1W solar panel, 13 minutes per day of direct sun is required to keep the battery full.
+> (1Wh * 1000) / 6 (v) = 166.mAh ; Solar output
+> 1.53mAh * 24h = 36 (mAh per day consumed)
+> 36mAh / 166.666mAh = 13 minutes
 
 ![Power Consumpion during measurement/transmission](usage.png?raw=true "Power Consumption during measurement/transmission")
 
@@ -53,4 +55,4 @@ Measurements taken using a [CurrentRanger](https://lowpowerlab.com/shop/product/
 Monitor battery level
 
 # Learnings
-* 1100mAh battery is too large for this project. It may last years without sun before running flat
+* ~~1100mAh battery is too large for this project. It may last years without sun before running flat~~ Continue to check over my maths
